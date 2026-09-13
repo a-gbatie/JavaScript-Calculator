@@ -35,14 +35,17 @@ function divide(a, b) {
     return result;
 }
 
-if (require.main === module) {
-    console.log('History: ', operationHistory);
-}
-
 //Future Feature - Clear History
 function clearHistory() {
     operationHistory.length = 0;
 }
+
+//Run code
+add(2, 3);
+subtract(10, 4);
+multiply(3, 4);
+divide(20, 5);
+console.log('History: ', operationHistory);
 
 module.exports = {
     add,
